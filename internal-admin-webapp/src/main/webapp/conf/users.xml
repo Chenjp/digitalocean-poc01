@@ -1,0 +1,18 @@
+<tomcat-users>
+    <role rolename="manager-gui"/>
+    <user username="tomcat" password="s3cret_underlying.Cloud" roles="manager-gui"/>
+    <role rolename="manager-script"/>
+    <user username="tomcat-script" password="script%s3cret_underlying.Cloud" roles="manager-script"/>
+
+    <role rolename="adminGroup"/><!-- System administration Group, Include Diagnostics, Remote Echo, Credential/Configuration change. -->
+    <user username="admin" password="S3cret_@2025" roles="adminGroup"/>
+
+    <role rolename="k4sec.adminGroup"/><!-- Application administrators -->
+    <role rolename="k4sec.customerGroup"/>
+
+    
+    <user username="k4sec.admin" password="Str0ng^k4sec^P@sstow0rd" roles="k4sec.adminGroup"/>
+    <user username="k4sec.dummy" password="My403-403P@sswxord" roles="k4sec.customerGroup"/>
+    <user username="thomas" password="MUx03^36xord" roles="k4sec.customer"/>
+    <user username="Schedtz.Nk" password="It-cym03293xm6" roles="k4sec.customer"/>
+</tomcat-users>
